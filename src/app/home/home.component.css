@@ -1,0 +1,11 @@
+#bgDiv {
+    opacity: 0.3;
+    margin: auto;
+    width: 60%;
+    padding: 16px 0 0 0px;
+  }
+
+  img.imgProp {
+    display: inline-block;
+
+  }
