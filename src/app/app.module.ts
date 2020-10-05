@@ -11,6 +11,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DictionaryDataService } from 'src/app/shared/services/dictionary-data.service';
 import { AppmaterialModule } from './shared/appmaterial/appmaterial.module';
+import { ItsolutionModule } from './itsolution/itsolution.module';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogPopupElementComponent } from './dialog-popup-element/dialog-popup-element.component';
+
 
 
 
@@ -19,7 +25,9 @@ import { AppmaterialModule } from './shared/appmaterial/appmaterial.module';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent,
+    DialogPopupElementComponent
   ],
   imports: [
 BrowserModule,
@@ -29,7 +37,11 @@ BrowserModule,
     SharedModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    AppmaterialModule
+    AppmaterialModule,
+    ItsolutionModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [DictionaryDataService],
   bootstrap: [AppComponent]

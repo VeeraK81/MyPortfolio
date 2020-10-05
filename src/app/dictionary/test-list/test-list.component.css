@@ -15,5 +15,17 @@ td, th {
 
   margin: auto;
   width: 80%;
-  padding: 16px 0 0 0px;
+  padding: 0 0 0 0;
+}
+
+#tbdata{
+Position: relative;
+max-height: 600px;
+overflow: auto;
+}
+
+#tbhead{
+
+  background-color: #ccd4d4;
+  color: black;
 }

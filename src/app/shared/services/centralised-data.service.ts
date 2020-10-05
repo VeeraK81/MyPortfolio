@@ -15,4 +15,8 @@ export class CentralisedDataService {
   changeMessage(message: string) {
     this.paveNav.next(message);
   }
+
+  sendMessage(){
+
+  }
 }

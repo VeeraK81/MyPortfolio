@@ -1,0 +1,16 @@
+<div id="bgDiv">
+<!-- <h1>IT SOLUTION DASHBOARD</h1>
+
+<h4>IT SOLUTION upgrade in progress...</h4> -->
+
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile  (click)="getTile($event)"
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color"
+      [ngStyle]="{'font-size': '24px', 'color': 'white' }">
+    {{tile.text}}
+  </mat-grid-tile>
+</mat-grid-list>
+</div>

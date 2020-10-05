@@ -9,8 +9,14 @@ import { WordReference } from 'src/app/models/word-reference';
 export class DictionaryDataService {
 
   _url: string = '/assets/source.json';
+  _urljson: string = '/assets/scrdata.json';
 
-  constructor(private http: HttpClient) { }
+  dtscr;
+
+  constructor(private http: HttpClient) {
+
+
+  }
 
 
   getData(): Observable<WordReference[]>{
@@ -18,4 +24,14 @@ export class DictionaryDataService {
   return this.http.get<WordReference[]>(this._url);
 
   }
+
+  getJsonData(): Observable<WordReference[]>{
+
+    return this.http.get<WordReference[]>(this._urljson);
+
+    }
+
+
+
+
 }
